@@ -23,4 +23,12 @@ def ask():
         "message": "What is LLM",
         "Answer": "Large Language Model"
     }
+@klu.get("/student")
+def student():
+    return {"id":1,"name" :"Ram", "gender":"male", "course":"DSA"}
 
+@klu.get("/students")
+def students():
+    return [{"id":1,"name" :"Ram", "gender":"male", "course":"DSA"},
+            {"id":2,"name" :"Aasritha","gender":"female", "course":"DSA"},
+            {"id":3,"name" :"Namitha", "gender":"female", "course":"DSA"}]
