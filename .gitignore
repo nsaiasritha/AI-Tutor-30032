@@ -1,3 +1,2 @@
-
-*.txt
-backend/.env
+project.txt
+.env
